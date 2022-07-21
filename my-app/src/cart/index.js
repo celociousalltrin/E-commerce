@@ -24,7 +24,7 @@ const Cart = () => {
     <div key={item.product_code}>
         <div className="d-flex mb-5">
 
-        <img src={IMAGE} className="card-img-top col-2" alt="Dining"  height ="100px" />
+        <img src={IMAGE} className="card-img-top col-2" alt="Dining"  height ="99px" />
         <div className="col-8">
         
         <Link className="text-decoration-none text-dark" to={`/Dining/${item.product_code}`}>
