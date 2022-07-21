@@ -5,9 +5,16 @@ import CustomAPI from "../shared/container/baseAPISetup"
 const ProductDetails = () => {
     const {id} = useParams();
     const [data,setData] = useState([])
+    const [image,setImage] = useState(null)
+    
     useEffect(()=>{
         CustomAPI.get(`/DiningList`,{params: {product_code:id}})
         .then((res)=>setData(res.data))
+    },[id])
+
+    useEffect(()=>{
+        CustomAPI.get(`/DiningList`,{params: {product_code:id}})
+        .then((res)=>setImage("https://www.jiomart.com/" + res.data[0].image_url ))
     },[id])
 
     return (
@@ -15,7 +22,7 @@ const ProductDetails = () => {
         {data.length > 0 && 
              (<div className="row mt-5">
                 <div className="col-6">
-                <h3>{data[0].IMAGE}</h3>
+                <img src= {image} className="img-fluid rounded mx-auto d-block" style={{width:"50%"}} alt="mage"></img>
              </div>
         
         <div className="col-6">

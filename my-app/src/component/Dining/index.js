@@ -5,7 +5,7 @@ import ProductList from "./productlist";
 
 const URL ="https://www.jiomart.com/images/category/1712/dining-20220519.jpeg";
 
-const ProductContainer = ({RATE}) =>{
+const ProductContainer = () =>{
     const [sort,setSort] = useState('Popularity')
     const handleSort = (arg) => {  
   setSort(arg)
@@ -20,7 +20,7 @@ const ProductContainer = ({RATE}) =>{
             <button onClick={()=>handleSort("HighToLow")} className="btn btn-outline-primary mx-2">High to Low</button>
             <button onClick={()=>handleSort("LowToHigh")} className="btn btn-outline-primary mx-2 ">Low to High</button>
            </div>
-           <ProductList order={sort} RATE={RATE} />
+           <ProductList order={sort}  />
          </div>
     )  
 }

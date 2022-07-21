@@ -1,14 +1,16 @@
 import ProductCard from "./productcard";
 import SortByMock from "../../shared/container/buttonfilter";
 import CustomAPI from "../../shared/container/baseAPISetup";
+import { DataContext } from "../../pages/dining";
+import { useContext } from "react";
 
-const ProductList = ({order,RATE}) => {
-    const DATA = SortByMock(order,RATE);
+const ProductList = ({order}) => {
+    const ContextValue = useContext(DataContext)
+    const DATA = SortByMock(order,ContextValue);
 
     const handleClick = (arg) => {
         CustomAPI
         .get(`/cart?product_code=${arg.product_code}`).then(res=>{
-               console.log(res.data)
               res.data.length > 0 ? UpdateCart(res.data[0]) : CreateCart(arg)
         })
         }

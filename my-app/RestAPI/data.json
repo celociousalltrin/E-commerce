@@ -28755,13 +28755,22 @@
   ],
   "cart": [
     {
-      "image_url": "images/product/150x150/rvhgj8wcse/capital-kitchenware-pack-of-1-plastic-tea-time-cup-with-lid-unbreakable-material-product-images-orvhgj8wcse-p590628847-0-202108312054.jpg",
-      "display_name": "Capital Kitchenware Plastic Double Wall Vacuum Tea Cup With Lid 150 ml (Set of 3)",
-      "avg_selling_price": 379.18,
-      "avg_mrp": 599,
-      "product_code": 590628847,
-      "order_qty": 1,
+      "image_url": "images/product/150x150/rvxnptn8kv/dynore-stainless-steel-6-pcs-apple-cups-product-images-orvxnptn8kv-p590628581-0-202108311953.png",
+      "display_name": "Dynore Stainless Steel Double Wall Apple Cup 100 ml (Set of 6)",
+      "avg_selling_price": 700,
+      "avg_mrp": 975,
+      "product_code": 590628581,
+      "order_qty": 3,
       "id": 1
+    },
+    {
+      "image_url": "images/product/150x150/rvlamyrfgs/femora-glass-classic-tea-cup-mug-coffee-mug-180ml-set-of-6-product-images-orvlamyrfgs-p590658914-0-202109032356.jpg",
+      "display_name": "Femora Classic Glass Tea and Coffee Mug 180 ml (Set of 6)",
+      "avg_selling_price": 663.94,
+      "avg_mrp": 720,
+      "product_code": 590658914,
+      "order_qty": 1,
+      "id": 2
     },
     {
       "image_url": "images/product/150x150/rvbi93evyx/coffee-mug-plastic-steel-cups-for-coffee-tea-cocoa-camping-mugs-with-handle-portable-easy-clean-product-images-orvbi93evyx-p590360644-0-202107151637.jpg",
@@ -28770,7 +28779,16 @@
       "avg_mrp": 899,
       "product_code": 590360644,
       "order_qty": 1,
-      "id": 2
+      "id": 3
+    },
+    {
+      "image_url": "images/product/150x150/rvhgj8wcse/capital-kitchenware-pack-of-1-plastic-tea-time-cup-with-lid-unbreakable-material-product-images-orvhgj8wcse-p590628847-0-202108312054.jpg",
+      "display_name": "Capital Kitchenware Plastic Double Wall Vacuum Tea Cup With Lid 150 ml (Set of 3)",
+      "avg_selling_price": 379.18,
+      "avg_mrp": 599,
+      "product_code": 590628847,
+      "order_qty": 2,
+      "id": 4
     }
   ]
 }

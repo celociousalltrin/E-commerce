@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import CustomAPI from "../shared/container/baseAPISetup"
+import { Link } from "react-router-dom";
 
 const Cart = () => {
     const [data,setData]= useState([])
@@ -22,9 +23,13 @@ const Cart = () => {
         return (
     <div key={item.product_code}>
         <div className="d-flex mb-5">
+
         <img src={IMAGE} className="card-img-top col-2" alt="Dining"  height ="100px" />
         <div className="col-8">
-        <h6>{item.display_name}</h6>
+        
+        <Link className="text-decoration-none text-dark" to={`/Dining/${item.product_code}`}>
+            {<h6>{item.display_name}</h6>}
+        </Link>
         <div className="d-flex mb-2">
         <div className="font-weight-bold text-success" style={{fontSize:"120%"}}> 
               <h6>₹ {item.avg_selling_price}</h6> 
@@ -49,8 +54,10 @@ const Cart = () => {
  }
     return (
         <div>
-              <h6>Cart Item</h6>
+              <h3 className="mt-5 ml-5 mb-4"><b>My Cart</b></h3>
+              <div className="mt-4">
       <ul className="list-group">{renderIteration()}</ ul>
+      </div>
         </div>
     )
 }

@@ -7,10 +7,14 @@ import Counter from "../Counter/index"
 import FilterComponent from "../leftcomponent/Dining/filters/RangeFilter";
 import FetchDataConsume from "../example/fetchDataConsume";
 import CustomAPI from "../shared/container/baseAPISetup"
+import React from "react";
+
+export const DataContext = React.createContext([])
 
 const DiningPage = () => {
   const [price,setPrice] = useState(1000);
   const[dataList,setDataList] = useState([])
+  
   
   const handlePrice = (arg) => {
     setPrice(arg)
@@ -36,7 +40,11 @@ const cash = PriceFilter(dataList,price)
 
           <div className = "col-9 bg-light p-3 ">
             <FetchDataConsume />
-              <ProductContainer RATE={cash}/>
+            
+            <DataContext.Provider value={cash}>
+            <ProductContainer />
+            </DataContext.Provider>
+            
           </div>
 
         </div>
