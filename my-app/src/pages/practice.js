@@ -10,6 +10,7 @@ const Name =() =>{
     return(
         <div>
             {x()}
+            <Data />
         </div>
     )
 }
