@@ -1,18 +1,14 @@
 import { Data } from "./child";
 import { DiningMockData } from "../mockdata";
+import React from "react"
 
-const Name =() =>{
-    const x  = () =>{
+class Name extends React.Component {
+    render() {
         return(
-            DiningMockData.map((element)=><Data key = {element.product_code}{...element}/>) 
+            <div>
+                <h1>d dfvesfvesves</h1>
+            </div>
         )
     }
-    return(
-        <div>
-            {x()}
-            <Data />
-        </div>
-    )
 }
-
 export default Name;
