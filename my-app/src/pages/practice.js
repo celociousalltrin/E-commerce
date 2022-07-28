@@ -1,27 +1,33 @@
-import {useState} from "react"
+import {useState,useEffect} from "react"
 
 const Name = () =>{
-const [log,setLog] = useState(true)
+    const [price,setPrice] = useState(0)
 
-const handleClick = ()=>{
-    setLog(!log)
+    useEffect(()=>{
+        console.log("It runs for every render")
+    },[])
+
+    const handleClick =() =>{
+        setPrice(price+1)
+    }
+const X  = () =>{
+    return(
+        <h1>{price} is even number</h1>
+    )
 }
 
-const In = () =>{
-    return (<div><button className="btn btn-primary"
-    onClick={handleClick}>Login</button>
-    <h4>Welcom Guest</h4></div>
-)}
 
-const Out = () =>{
-    return <button className="btn btn-secondary"
-    onClick={handleClick}>Log out</button>
+const Y  = () =>{
+    return(
+        <h1> {price} is odd number</h1>
+    )
 }
-    
     return (
-        <div>
-            <h1>Hello</h1>
-            {log ? <In /> : <Out />}
+        <div className = "mt-5 ml-5">
+            <h1>The amount will increase {price}</h1>
+           {price % 2 ==0 ? <X /> : <Y />}
+   <button className = "btn btn-primary" 
+   onClick={handleClick}>Click here</button>
         </div>
     )
 }
