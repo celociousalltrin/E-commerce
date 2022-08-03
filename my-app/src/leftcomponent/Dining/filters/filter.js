@@ -12,7 +12,7 @@ const FilterList = ({handleRate}) => {
     return (
         <div className = "container p-2 bg-white mt-4 text-dark">
             <h3 className="mb-4">Filters</h3>
-            
+            <FilterComponent handleRate={handleRate}/>
             <h5>Availability</h5>
             <Checkbox label="InStock Products"/>
             
@@ -36,7 +36,6 @@ const FilterList = ({handleRate}) => {
        
            </div>
           
-          <FilterComponent handleRate={handleRate}/>
            <h5>Discount</h5>
            <div >
            <label className="form-label"/>

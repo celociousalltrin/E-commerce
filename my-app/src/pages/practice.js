@@ -1,20 +1,30 @@
-import {useState,useEffect} from "react"
+import {useState} from "react"
 
-const Name = () =>{
-    const [count,setCount]=useState(0)
-    const [cal,setCal] = useState(-2)
-    useEffect(()=>{
-        setCal(cal+2)
-    },[count])
+const Name = ()=>{
+    const [state,setState] = useState(true)
+
+const In = (()=>{
+   return <div>
+       <button className="mt-5 ml-5 btn btn-primary" 
+       onClick={handleClick}> click Here</button>
+    </div>
+})
+
+const Out = (()=>{
+   return <div>
+       <button className="mt-5 ml-5 btn btn-success" 
+       onClick={handleClick}>Click here</button>
+    </div>
+})
+
+const handleClick = (()=>{
+    setState(!state)
+})
     return (
-        <div className="mt-5 ml-5">
-            <h3>count: {count}</h3>
-    <button className="btn btn-sm btn-secondary" onClick={()=>setCount(count+1)}>
-        +
-    </button>
-    <h3>calculation:{cal}</h3>
+        <div>
+ {state ? <In /> : <Out />}
         </div>
     )
-}
+} 
 
 export default Name;
