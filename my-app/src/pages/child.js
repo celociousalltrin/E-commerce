@@ -1,18 +1,13 @@
 
-const Child = (data)=>{
-    const {display_name,avg_mrp} = data
-    return (
+const Child = ((Data)=>{
+    const {display_name,avg_selling_price,avg_mrp} = Data
+    return(
         <div>
-            <h2>The {display_name} age is {avg_mrp}</h2>
+    <h5>The {display_name}</h5>
+    <h3>The {avg_selling_price}</h3>
+    <h5>The {avg_mrp}</h5>
         </div>
     )
-}
-
-Child.defaultProps = {
-    data:{
-        display_name:"Vijay",
-        avg_mrp:"45"
-    }
-}
+})
 
 export default Child;
