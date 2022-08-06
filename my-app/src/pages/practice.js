@@ -1,18 +1,26 @@
-import {useState,useEffect} from "react";
+import React from "react";
+import { useState } from "react";
 
-const Name = (()=>{
-    const [count,setCount] = useState(0)
-    const [cal,setCal] = useState(-11)
-useEffect(()=>{
-     setCal(cal+11)
-},[count])
+const Name = ()=>{
+    const [show,setShow] = useState(true)
+
+    const hanldeClick = (()=>{
+        setShow(!show)
+    })
     return (
-        <div className="mt-5 ml-5">
-            <h2>{count}</h2>
-<button className="btn" onClick={()=>setCount(count+1)}> + </button>
-<h2>{cal}</h2>
-        </div>
+        <div className="ml-5 mt-5">
+            {show ? (<div>
+                <button className="btn btn-primary" onClick={hanldeClick}>
+        click here
+       </button>
+            </div>) : (
+                 <button className="btn btn-success" onClick={hanldeClick}>
+                 click 
+                </button>)}
+            
+      
+   </div>
     )
-})
+}
 
 export default Name;
