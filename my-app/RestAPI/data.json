@@ -28753,51 +28753,5 @@
       }
     }
   ],
-  "cart": [
-    {
-      "image_url": "images/product/150x150/rvbi93evyx/coffee-mug-plastic-steel-cups-for-coffee-tea-cocoa-camping-mugs-with-handle-portable-easy-clean-product-images-orvbi93evyx-p590360644-0-202107151637.jpg",
-      "display_name": "Faverito Multicolor Double Wall Insulated Steel Plastic Coffee Mug 200 ml (2 pcs)",
-      "avg_selling_price": 248.69,
-      "avg_mrp": 899,
-      "product_code": 590360644,
-      "order_qty": 1,
-      "id": 1
-    },
-    {
-      "image_url": "images/product/150x150/rvxnptn8kv/dynore-stainless-steel-6-pcs-apple-cups-product-images-orvxnptn8kv-p590628581-0-202108311953.png",
-      "display_name": "Dynore Stainless Steel Double Wall Apple Cup 100 ml (Set of 6)",
-      "avg_selling_price": 700,
-      "avg_mrp": 975,
-      "product_code": 590628581,
-      "order_qty": 1,
-      "id": 2
-    },
-    {
-      "image_url": "images/product/150x150/rvlamyrfgs/femora-glass-classic-tea-cup-mug-coffee-mug-180ml-set-of-6-product-images-orvlamyrfgs-p590658914-0-202109032356.jpg",
-      "display_name": "Femora Classic Glass Tea and Coffee Mug 180 ml (Set of 6)",
-      "avg_selling_price": 663.94,
-      "avg_mrp": 720,
-      "product_code": 590658914,
-      "order_qty": 1,
-      "id": 3
-    },
-    {
-      "image_url": "images/product/150x150/491373660/lexus-assorted-ceramic-mug-140-ml-set-of-6-product-images-o491373660-p590363741-0-202205180118.jpg",
-      "display_name": "Lexus Assorted Ceramic Mug 140 ml (Set of 6)",
-      "avg_selling_price": 108.84,
-      "avg_mrp": 208.38,
-      "product_code": 590363741,
-      "order_qty": 1,
-      "id": 4
-    },
-    {
-      "image_url": "images/product/150x150/490876114/lexus-comfort-assorted-ceramic-mug-140-ml-set-of-6-product-images-o490876114-p590363752-0-202203252257.jpg",
-      "display_name": "Lexus Comfort Assorted Ceramic Mug 140 ml (Set of 6)",
-      "avg_selling_price": 108.84,
-      "avg_mrp": 208.38,
-      "product_code": 590363752,
-      "order_qty": 3,
-      "id": 5
-    }
-  ]
+  "cart": []
 }
